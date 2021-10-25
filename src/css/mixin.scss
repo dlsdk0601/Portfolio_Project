@@ -1,0 +1,23 @@
+@mixin flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin absolute_top {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+@mixin absolute_bottom {
+    position: absolute;
+    left: 0; bottom: 0;
+}
+@mixin margin_center {
+    margin: 0 auto;
+}
+@mixin transform_center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}

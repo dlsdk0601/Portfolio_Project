@@ -1,0 +1,47 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+html,
+body {
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Noto Sans KR', 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: Montserrat;
+    src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+    unicode-range:U+0041-005A, U+0061-007A;
+}
+
+ul,
+li,
+ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+figure,
+p {
+    margin: 0;
+}
+img {
+    vertical-align: top;
+}
+a {
+    text-decoration: none;
+    padding: 0;
+}
+
+.hidden{
+    display: none;
+}

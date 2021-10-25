@@ -1,0 +1,165 @@
+@import "mixin.scss";
+@import "common.scss";
+
+
+.modal{
+    width: 100%;
+    font-weight: 700;
+    transform: translateY(-200px);
+    .thum{
+        width: 75%; 
+        overflow: hidden;
+        margin: 0 auto;
+        img{
+            width: 100%; height: 100%;
+        }
+    }
+    .info{
+        width: 60%;
+        margin: 100px auto;
+        padding: 0 10%;
+        .info__text{
+            @include flex();
+            align-items: flex-start;
+            border-left: 1px solid #eee;
+            h2{
+                font-size: 22px;
+            }
+            .info__left{
+                width:30%;
+                .infoBox{
+                    margin-top: 60px;
+                    .infoBox__ans{
+                        margin-top: 10px;
+                        line-height: 1.5;
+                        color: #8c8c8c;
+                    }
+                }
+                .part{
+                    margin-top: 60px;
+                    .part__ans{
+                        margin-top: 10px;
+                        line-height: 1.5;
+                        color: #8c8c8c;
+                    }
+                }
+            }
+            .info__center{
+                width:30%;
+                .infoBox{
+                    margin-top: 60px;
+                    .infoBox__ans{
+                        margin-top: 10px;
+                        line-height: 1.5;
+                        color: #8c8c8c;
+                    }
+                }
+            }
+            .info__right{
+                width:30%;
+                .infoBox{
+                    margin-top: 60px;
+                    .infoBox__ans{
+                        margin-top: 10px;
+                        line-height: 1.5;
+                        color: #8c8c8c;
+                    }
+                }
+                .sitepage{
+                    margin-top: 60px;
+                    .sitepage__ans > a{
+                        color: #8c8c8c;
+                        @include flex();
+                        justify-content: flex-start;
+                        img{
+                            padding-left: 5px;
+                        }
+                    }
+                }
+            }
+        }
+        .overview{
+            margin-top: 60px;
+            .overview__exp{
+                padding-top: 20px;
+                padding-left: 5%;
+                line-height: 1.8;
+                color: #8c8c8c;
+                border-left: 1px solid #eee;
+            }
+        }
+        .focus{
+            margin-top: 60px;
+            .focus__exp{
+                padding-top: 20px;
+                padding-left: 5%;
+                line-height: 1.8;
+                color: #8c8c8c;
+                border-left: 1px solid #eee;
+                span{
+                    text-align: right;
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                    width: 100%;
+                    padding-top: 10px;
+                    a{
+                        color: #8c8c8c;
+                        img{
+                            padding-left: 5px;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+    .responsive{
+        width: 60%;
+        margin: 100px auto;
+        padding: 0 10%;
+        .responsive__photo{
+            padding: 40px 5%;
+            border-left: 1px solid #eee;
+            figure{
+                position: relative;
+                width: 50%;
+                margin: 0 auto;
+                
+                .mac{
+                    width: 100%;
+                }
+                .iphone{
+                    width: 150px;
+                    position: absolute;
+                    right: -50px; bottom: 0;
+                }
+            }
+        }
+        
+    }
+    .modal__photo{
+        width: 100%;
+        margin-top: 100px;
+        h2{
+            width: 60%;
+            margin: 0 auto;
+            padding-top: 50px;
+            color: white;
+        }
+        figure{
+            height: 80%;
+            width: 100%;
+            img{
+                display: block;
+                width: 50%;
+                height: 100%;
+                margin: auto;
+                padding: 100px 5%;
+                border-left: 1px solid rgba($color: #eee, $alpha: 0.2);
+                border-right: 1px solid rgba($color: #eee, $alpha: 0.2);
+            }
+        }
+        
+    }
+}

@@ -1,0 +1,27 @@
+@import 'common.scss';
+@import 'mixin.scss';
+
+
+body{
+    -ms-overflow-style: none;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+.modal__open{
+    display: none;
+    &.on{
+        background-color: white;
+        display: block;
+        z-index: 10;
+        animation: modal 1s forwards;
+        animation-delay: 0.5s;
+        position: absolute;
+        left: 0; top: 80vh;
+        opacity: 0;
+    }
+    @keyframes modal{
+        0%{transform: translateY(50px); opacity: 0;}
+        100%{transform: translateY(0); opacity: 1;}
+    }
+}

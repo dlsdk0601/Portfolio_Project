@@ -1,0 +1,59 @@
+@import "common.scss";
+@import "mixin.scss";
+
+.contact{
+    width: 100%; height: 100vh;
+    background-color: rgba($color: #000000, $alpha: 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .contact__box{
+        width: 100%; height: 100%;
+        max-height: 286px;
+        max-width: 1100px;
+        padding: 4rem;
+        color: #808080;
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        .contact__font{
+            height: 100%; width: 60%;
+            font-size: 7rem;
+            line-height: 0.96;
+            .font__stroke{
+                -webkit-text-stroke: 0.01px white;
+                color: transparent;
+                transform: translateY(50px);
+                transition: all 0.8s ease-in;
+                opacity: 0;
+                &.on{
+                    transform: translateY(0);
+                    opacity: 1;
+                }
+            }
+            .font__fill{
+                transform: translateY(-50px) rotateX(180deg);
+                transition: all 0.8s ease-in;
+                color: rgba($color: #808080, $alpha: 0.4);
+                opacity: 0;
+                &.on{
+                    transform: translateY(0) rotateX(180deg);
+                    opacity: 1;
+                }
+            }
+        }
+        .contact__info{
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-direction: column;
+            article{
+                h2{}
+                .info_a{
+                    color: white;
+                }
+            }
+        }
+    }
+}

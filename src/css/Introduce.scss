@@ -1,0 +1,59 @@
+@import "mixin.scss";
+@import "common.scss";
+
+.introduce{
+    width: 100%; height: 100vh;
+    z-index: 10;
+    .introduce__content{
+        width: 80%; margin: 0 auto; 
+        height: 100vh;
+        @include flex();
+        justify-content: space-between;
+        .introduce__img{
+            width: 40%;
+            transform: translateX(-100px);
+            opacity: 0;
+            transition: .8s;
+            figure{
+                width: 650px; height: 650px;
+                background-color: rgba($color: #000000, $alpha: 0.6);
+                position: relative;
+                img{
+                    width: 100%; height: 100%;
+                    @include absolute_top();
+                    left: 80px; top: 80px;
+
+                } 
+            }
+            &.on{
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+        .introduce__description{
+            width: 40%;
+            font-family: 'Noto Sans KR', sans-serif;
+            font-weight: 400;
+            transform: translateY(100px);
+            opacity: 0;
+            transition: .8s;
+            .introduce__des_title{
+                span{
+                    font-size: 3rem;
+                }
+            }
+            .description{
+                font-family: 'Noto Sans KR', sans-serif;
+                font-weight: 400;
+                margin-top: 50px;
+                font-size: 1.1rem;
+                // text-align: center;
+                line-height: 2;
+            }
+            &.on{
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    }
+}

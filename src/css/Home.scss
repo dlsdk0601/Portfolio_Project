@@ -1,0 +1,66 @@
+@import "mixin.scss";
+@import "common.scss";
+
+.con1{
+    z-index: 9999;
+    width: 100%; height: 100vh;
+    position: absolute;
+    left: 0; top: 0;
+    background-color: white;
+    transform: translateY(0);
+    transition: all 0.5s ease-in-out;
+    transition-delay: 2s;
+    &.intro{
+        transform: translateY(-100%);
+    }
+    .back{
+        width: 80%; height: 100%;
+        margin: 0 auto;
+        div{
+            width: 60%; 
+            margin: auto;
+            position: absolute;
+            bottom: 10%; left: 52%;
+            transform: translate(-50%, -50%);
+            p{
+                width: 35%;
+                margin: auto;
+                text-align: left;
+                span{
+                    color: color;
+                    font-size: 4.5rem;
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: 400;
+                }
+            }
+        }
+        div:nth-of-type(1){
+            bottom: 20%;
+        }
+        figure{
+            width: 200px; height: 200px;
+            position: relative;
+            margin: auto;
+            top: 40%;
+            transform: translateY(-50%);
+            transition: all 0.8s ease-in-out;
+            animation: logo 3s forwards;
+            img{
+                width: 100%; height: 100%;
+                transition: all 0.8s ease-in-out;
+                @include absolute_top();
+                &.on{
+                    opacity: 0;
+                }
+            }
+            
+            @keyframes logo{
+                0%{transform: translateY(-20%); opacity: 0;}
+                100%{transform: translateY(-50%); opacity: 1;}
+            }
+        }
+        p{
+            font-weight: 300;
+        }
+    }
+}
